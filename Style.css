@@ -1,0 +1,145 @@
+@charset "utf-8";
+/* CSS Document */
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Verdana;
+}
+
+a{
+  text-decoration: none;
+}
+
+#social-links{
+  position: fixed;
+  left: 20%;
+  bottom: 40px;
+
+
+
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+#social-links a{
+  margin: 0 8px;
+}
+
+#social-links img{
+  height: 42px;
+  transition: opacity 0.4s;
+  -ms-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+}
+
+#social-links img:hover{
+  opacity: 0.5;
+}
+
+body{
+	background-image: url('background.jpg');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	background-color: black;
+	background-position: center center;
+}
+
+#name{
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  margin: -40px 0 0;
+  padding: 0;
+
+  background: url('assets/images/gerard-pique.png') no-repeat center;
+  background-size: contain;
+  padding-top: 150px;
+  height: 0;
+  overflow: hidden;
+  width: 300px;
+
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+
+
+
+  transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+
+}
+
+
+@media screen and (max-width:1280px) {
+  #social-links{
+    left: 40px;
+    right: 40px;
+
+    transform: none;
+    -ms-transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+  }
+
+  #name{
+    left: 255px;
+  }
+}
+
+
+@media screen and (min-width:1400px) {
+  body{
+    background-image: url('assets/images/background-medium.jpg');
+  }
+
+  #name{
+    width: 360px;
+    padding-top: 194px;
+  }
+}
+
+@media screen and (min-width:2000px) {
+  body{
+    background-image: url('assets/images/background-high.jpg');
+  }
+
+  #name{
+    width: 480px;
+    padding-top: 256px;
+  }
+}
+
+
+@media screen and (max-width:800px) {
+  #name{
+	top: 40px;
+	left: 50%;
+	width: 250px;
+	margin: 0;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+
+  }
+}
